@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d14">
+  <meta name="description" content="CINEMA — фильмдерді қарап, кино билеттерін демо режимде броньдауға арналған оқу жобасы.">
+  <title>CINEMA — Кино билеттерін онлайн броньдау</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">🎬 CINEMA<span>.</span></a>
+    <nav class="navlinks" aria-label="Негізгі навигация">
+      <a href="#films">Фильмдер</a><a href="#offers">Акциялар</a><a href="#booking">Билет броньдау</a><a href="#about">Біз туралы</a>
+    </nav>
+    <a class="nav-cta" href="#booking">Билет алу ↗</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div><div class="eyebrow">✦ Киноның сиқырын сезін</div><h1>Үлкен экран.<br><span>Ұмытылмас</span> әсер.</h1><p>Өзіңе ұнайтын фильмді таңда, ыңғайлы орныңды белгіле және кино кешіңді бірнеше секундта жоспарла.</p>
+    <div class="hero-actions"><a class="primary" href="#films">Фильмдерді көру →</a><a class="secondary" href="#booking">Орын таңдау</a></div>
+    <div class="hero-note"><span>⭐ <b>4.9/5</b> көрермен бағасы</span><span>🎟️ <b>Онлайн</b> броньдау</span><span>🍿 <b>Ыңғайлы</b> сервис</span></div>
+  </div>
+  <div class="feature-poster"><div class="poster-top">CINEMA PREMIERE · 2026</div><div class="poster-art">🚀</div><div class="poster-bottom"><div class="eyebrow">Аптаның таңдауы</div><h3>Ғарыш әлемі</h3><p>Фантастика · 12+ · 120 минут</p></div></div>
+</div></section>
+<section class="section" id="films"><div class="container">
+  <div class="section-head"><div><div class="kicker">Афиша</div><h2>Қазір көрсетілімде</h2><p>Келесі кино кешіңе фильм таңда.</p></div><a class="text-link" href="#booking">Билет броньдау ↓</a></div>
+  <div class="filters" aria-label="Фильм жанры">
+    <button class="filter active" data-filter="all">Барлығы</button><button class="filter" data-filter="Фантастика">Фантастика</button><button class="filter" data-filter="Экшн">Экшн</button><button class="filter" data-filter="Комедия">Комедия</button><button class="filter" data-filter="Драма">Драма</button>
+  </div>
+  <div class="movies" id="movieGrid">
+    <article class="movie" data-genre="Фантастика"><div class="movie-art art1"><span>🚀</span><span class="movie-tag">ПРЕМЬЕРА</span></div><div class="movie-body"><h3>Ғарыш әлемі</h3><div class="meta">Фантастика · 120 минут · 12+</div><div class="rating">★ 9.2 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">2 000 ₸ бастап</span><button class="small-btn" data-movie="Ғарыш әлемі">Билет алу</button></div></div></article>
+    <article class="movie" data-genre="Экшн"><div class="movie-art art2"><span>🦸</span><span class="movie-tag">ХИТ</span></div><div class="movie-body"><h3>Супер қаһарман</h3><div class="meta">Экшн · 110 минут · 12+</div><div class="rating">★ 8.8 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">2 000 ₸ бастап</span><button class="small-btn" data-movie="Супер қаһарман">Билет алу</button></div></div></article>
+    <article class="movie" data-genre="Комедия"><div class="movie-art art3"><span>😂</span><span class="movie-tag">КӨҢІЛ КҮЙ</span></div><div class="movie-body"><h3>Күлкі кеші</h3><div class="meta">Комедия · 95 минут · 6+</div><div class="rating">★ 8.5 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">1 800 ₸ бастап</span><button class="small-btn" data-movie="Күлкі кеші">Билет алу</button></div></div></article>
+    <article class="movie" data-genre="Драма"><div class="movie-art art4"><span>🌿</span><span class="movie-tag">ЖАҢА</span></div><div class="movie-body"><h3>Жаңа белес</h3><div class="meta">Драма · 105 минут · 12+</div><div class="rating">★ 8.7 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">1 900 ₸ бастап</span><button class="small-btn" data-movie="Жаңа белес">Билет алу</button></div></div></article>
+    <article class="movie" data-genre="Фантастика"><div class="movie-art art5"><span>🌌</span></div><div class="movie-body"><h3>Жұлдыздар сыры</h3><div class="meta">Фантастика · 128 минут · 12+</div><div class="rating">★ 9.0 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">2 200 ₸ бастап</span><button class="small-btn" data-movie="Жұлдыздар сыры">Билет алу</button></div></div></article>
+    <article class="movie" data-genre="Экшн"><div class="movie-art art6"><span>🏎️</span></div><div class="movie-body"><h3>Жылдамдық</h3><div class="meta">Экшн · 115 минут · 16+</div><div class="rating">★ 8.4 <span class="meta">/ 10</span></div><div class="movie-foot"><span class="price">2 000 ₸ бастап</span><button class="small-btn" data-movie="Жылдамдық">Билет алу</button></div></div></article>
+  </div>
+</div></section>
+<section class="section alt" id="offers"><div class="container"><div class="section-head"><div><div class="kicker">Арнайы ұсыныстар</div><h2>Киноға тиімдірек бар</h2><p>Достарыңмен бөлісетін жақсы ұсыныстар.</p></div></div>
+  <div class="promo-grid"><div class="promo one"><div class="eyebrow">Достармен бірге</div><h3>3 билет ал — көңіл күйіңді бөліс!</h3><p>Топ болып киноға баруға таптырмас мүмкіндік.</p><a class="small-btn" href="#booking">Орын таңдау →</a><div class="emoji">🍿</div></div><div class="promo two"><div class="eyebrow">Апта күндері</div><h3>Киноға арналған ерекше кеш</h3><p>Сеансты алдын ала таңдап, орныңды өзіңе ыңғайла.</p><a class="small-btn" href="#booking">Кестені көру →</a><div class="emoji">✨</div></div></div>
+</div></section>
+<section class="section" id="booking"><div class="container"><div class="section-head"><div><div class="kicker">Онлайн билет</div><h2>Орыныңды таңда</h2><p>Фильмді, күнді, сеансты және бос орынды белгіле.</p></div></div>
+<div class="booking-wrap"><div class="booking-card"><h3>🎟️ Броньдау мәліметтері</h3>
+  <div class="form-grid"><div class="field"><label for="movie">Фильм</label><select id="movie"><option>Ғарыш әлемі</option><option>Супер қаһарман</option><option>Күлкі кеші</option><option>Жаңа белес</option><option>Жұлдыздар сыры</option><option>Жылдамдық</option></select></div>
+  <div class="field"><label for="date">Кино күні</label><input id="date" type="date"></div>
+  <div class="field"><label for="time">Сеанс уақыты</label><select id="time"><option>12:00</option><option>15:00</option><option>18:00</option><option>21:00</option></select></div>
+  <div class="field"><label for="customer">Атыңыз (міндетті емес)</label><input id="customer" type="text" placeholder="Атыңызды енгізіңіз"></div></div>
+  <div class="screen">ЭКРАН</div><div class="seats" id="seats"></div>
+  <div class="seat-legend"><span class="legend-item"><i class="dot"></i> Бос</span><span class="legend-item"><i class="dot sel"></i> Таңдалған</span><span class="legend-item"><i class="dot taken"></i> Бос емес</span></div>
+</div>
+<aside class="summary-card"><h3>🧾 Сіздің тапсырысыңыз</h3><div class="summary-row"><span>Фильм</span><strong id="sumMovie">Ғарыш әлемі</strong></div><div class="summary-row"><span>Күні</span><strong id="sumDate">Күн таңдалмаған</strong></div><div class="summary-row"><span>Сеанс</span><strong id="sumTime">12:00</strong></div><div class="summary-row"><span>Орындар</span><strong id="sumSeats">Таңдалмаған</strong></div><div class="summary-row"><span>Билет саны</span><strong id="count">0</strong></div><div class="summary-total"><span>Жалпы сома</span><strong id="total">0 ₸</strong></div><button class="primary full" id="confirmBooking">Броньды растау →</button><p class="fineprint">* Бұл оқу жобасының демо-нұсқасы. Төлем алынбайды және бронь дерекқорға сақталмайды.</p><div class="result" id="result" role="status" aria-live="polite"></div></aside>
+</div></div></section>
+<section class="section alt" id="about"><div class="container"><div class="section-head"><div><div class="kicker">Неге CINEMA?</div><h2>Кино кешіңді оңай жоспарла</h2><p>Ыңғайлылық пен жақсы әсер бір жерде.</p></div></div><div class="perks"><div class="perk"><div class="perk-icon">🎟️</div><h3>Жылдам броньдау</h3><p>Фильм мен сеансты таңдап, бос орындарды бірнеше қадамда белгіле.</p></div><div class="perk"><div class="perk-icon">💺</div><h3>Өз орныңды таңда</h3><p>Зал схемасынан өзіңе ыңғайлы бос орындарды таңдай аласың.</p></div><div class="perk"><div class="perk-icon">🍿</div><h3>Киноға дайын бол</h3><p>Фильмдер туралы ақпаратты қарап, кешіңді алдын ала жоспарла.</p></div></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><div class="kicker">Сұрақ-жауап</div><h2>Жиі қойылатын сұрақтар</h2></div></div><div class="faq-list">
+<details class="faq-item"><summary>Билетті қалай броньдаймын?</summary><p>Фильмді, күнді және сеанс уақытын таңдаңыз. Залдағы бос орындарды белгілеңіз де, «Броньды растау» батырмасын басыңыз.</p></details>
+<details class="faq-item"><summary>Бірнеше орын таңдауға бола ма?</summary><p>Иә. Бос орындарды кезекпен басып, бір тапсырыста бірнеше билет таңдай аласыз. Жалпы сома автоматты түрде есептеледі.</p></details>
+<details class="faq-item"><summary>Бронь нақты сақтала ма?</summary><p>Бұл — оқу мақсатындағы демонстрациялық сайт. Бронь тек экранда көрсетіледі, серверге немесе дерекқорға жіберілмейді.</p></details>
+<details class="faq-item"><summary>Билет бағасы қанша?</summary><p>Бұл демо-нұсқада фильмге қарай бағалар көрсетіледі. Нақты кинотеатр үшін дерекқор мен сервер қосу қажет.</p></details>
+</div></div></section>
+<section class="section"><div class="container"><div class="newsletter"><div><div class="eyebrow">🎬 CINEMA жаңалықтары</div><h2>Премьераларды өткізіп алма!</h2><p>Жаңа фильмдер мен арнайы ұсыныстар туралы хабардар бол.</p></div><form class="newsletter-form" id="newsForm"><input type="email" id="email" placeholder="Email мекенжайыңыз" required aria-label="Email мекенжайы"><button class="primary" type="submit">Жазылу</button></form></div></div></section>
+</main>
+<footer><div class="container"><div class="footer-top"><a class="logo" href="#home">🎬 CINEMA<span>.</span></a><div class="footer-links"><a href="#films">Фильмдер</a><a href="#offers">Акциялар</a><a href="#booking">Броньдау</a><a href="#about">Біз туралы</a></div><div>📍 Қазақстан · Онлайн кино сервисі</div></div><div class="copyright">© 2026 CINEMA Booking. Оқу жобасы үшін жасалған.</div></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
